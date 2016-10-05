@@ -18,6 +18,11 @@ makeCacheMatrix <- function(cacmat = matrix()) {
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(cacmat, ...) {
+          inv <- camat$getinverse()
+  if(!is.null(inv)) {
+    message("getting cached data.")
+    return(inv)
+  }
         ## Return a matrix that is the inverse of 'x'
 }
