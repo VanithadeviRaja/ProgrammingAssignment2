@@ -31,3 +31,10 @@ cacheSolve <- function(cacmat, ...) {
   cacmat$setinverse(inv)
   inv       
 }
+ ## Sample run:
+## > x = rbind(c(1, -1/4), c(-1/4, 1))
+## > m = makeCacheMatrix(x)
+## > m$get()
+##       [,1]  [,2]
+## [1,]  1.00 -0.25
+## [2,] -0.25  1.00
