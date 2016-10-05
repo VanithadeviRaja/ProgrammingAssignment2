@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(cacmat = matrix()) {
          inv <- NULL
   set <- function(y) {
     cacmat<<- y
