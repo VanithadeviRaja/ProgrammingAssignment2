@@ -9,7 +9,10 @@ makeCacheMatrix <- function(x = matrix()) {
     cacmat<<- y
     inv <<- NULL
   }
-
+ get <- function() cacmat
+  setinverse <- function(inverse) inv <<- inverse
+  getinverse <- function() inv
+  list(set=set, get=get, setinverse=setinverse, getinverse=getinverse)
 }
 
 
