@@ -17,12 +17,15 @@ makeCacheMatrix <- function(cacmat = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## Return a matrix that is the inverse of 'comcat'
 cacheSolve <- function(cacmat, ...) {
           inv <- camat$getinverse()
   if(!is.null(inv)) {
     message("getting cached data.")
     return(inv)
   }
-        ## Return a matrix that is the inverse of 'x'
+ data <- cacmat$get()
+  inv <- solve(data)
+  cacmat$setinverse(inv)
+  inv       
 }
