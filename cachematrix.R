@@ -39,18 +39,19 @@ cacheSolve <- function(x, ...) {
 }
 
 ## Sample run:
-## > x = rbind(c(1, -1/4), c(-1/4, 1))
+## > x = rbind(c(1, 2), c(4, 1))
 ## > m = makeCacheMatrix(x)
 ## > m$get()
-##       [,1]  [,2]
-## [1,]  1.00 -0.25
-## [2,] -0.25  1.00
+##       m$get()
+##   [,1] [,2]
+##[1,]    1    2
+##[2,]    4    1
 
 ## No cache in the first run
 ## > cacheSolve(m)
-##           [,1]      [,2]
-## [1,] 1.0666667 0.2666667
-## [2,] 0.2666667 1.0666667
+##           [,1]       [,2]
+##[1,] -0.1428571  0.2857143
+##[2,]  0.5714286 -0.1428571
 
 ## Retrieving from the cache in the second run
 ## > cacheSolve(m)
