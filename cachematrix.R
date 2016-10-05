@@ -32,8 +32,8 @@ cacheSolve <- function(cacmat, ...) {
   inv       
 }
  ## Sample run:
-## > x = rbind(c(1, -1/4), c(-1/4, 1))
-## > m = makeCacheMatrix(x)
+## > cacmat= rbind(c(1, -1/4), c(-1/4, 1))
+## > m= makeCacheMatrix(cacmat)
 ## > m$get()
 ##       [,1]  [,2]
 ## [1,]  1.00 -0.25
